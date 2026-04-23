@@ -21,13 +21,18 @@ df_tratado.agg(
 
 # 3.2 Média geral
 df_tratado.agg(
-    avg("valor_parcela").alias("media_pagamento")
+    avg("valor_parcela").cast("decimal(10,2)").alias("media_pagamento")
 ).show()
 
 # Média por UF
 df_tratado.groupBy("uf").agg(
-    avg("valor_parcela").alias("media_por_uf")
+    avg("valor_parcela").cast("decimal(10,2)").alias("media_por_uf")
 ).show()
+
+# Média por cpf_favorecido
+df_tratado.groupBy("cpf_favorecido").agg(
+    avg("valor_parcela").cast("decimal(10,2)").alias("media_por_cpf")
+).show(5, truncate=False)
 
 # 3.3 Ranking dos estados
 df_tratado.groupBy("uf") \
