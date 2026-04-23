@@ -24,18 +24,28 @@ O fluxo do projeto segue as etapas clássicas de um pipeline de dados:
 
 ## 📁 Estrutura do Projeto
 
-```
-📦 projeto-bolsa-familia
- ┣ 📂 dados
- ┃ ┗ NovoBolsaFamilia24.csv
- ┣ 📂 notebooks
- ┃ ┗ analise_exploratoria.ipynb
- ┣ 📄 leitura_dados.py
- ┣ 📄 tratamento_dados.py
- ┣ 📄 analises.py
- ┣ 📄 graficos.py
- ┣ 📄 requirements.txt
- ┗ 📄 README.md
+## 📂 Estrutura do Projeto
+
+```bash
+projeto-bolsa-familia/
+│
+├── dados/
+│   └── NovoBolsaFamilia24.csv
+│
+├── notebooks/
+│   └── analise_exploratoria.ipynb
+│
+├── src/
+│   ├── leitura_dados.py
+│   ├── tratamento_dados.py
+│   ├── graficos.py
+│   └── analises.py
+│
+├── grafico_top_ufs.png
+├── grafico_evolucao.png
+│
+├── requirements.txt
+└── README.md
 ```
 
 ---
