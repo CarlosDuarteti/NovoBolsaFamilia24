@@ -22,8 +22,6 @@ O fluxo do projeto segue as etapas clássicas de um pipeline de dados:
 
 ---
 
-## 📁 Estrutura do Projeto
-
 ## 📂 Estrutura do Projeto
 
 ```bash
